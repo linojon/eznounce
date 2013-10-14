@@ -1,0 +1,23 @@
+TODO
+rspec
+capybara
+
+models
+	person
+	group
+	membership (person-group)
+	account
+	message ( group_id: , sender_id: , sent_at: , text: , sent_count: , received_count: , responded_count:)
+	delivery (message_id, delivery_method, status, response_id)
+
+associations
+	person
+		has many memberships
+		has many messages
+
+api
+	POST /group/:id/text=
+		=> { msg_id: }
+	GET /message/:id
+		=> { }
+
