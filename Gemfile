@@ -28,7 +28,10 @@ group :development, :test do
   gem "binding_of_caller"
   gem "better_errors"
   gem 'rspec-rails', '~> 2.0'
+  gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 group :production do

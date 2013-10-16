@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Sender:
+  = @message.sender
+%p
+  %b Group:
+  = @message.group
+%p
+  %b Text:
+  = @message.text
+%p
+  %b Sent at:
+  = @message.sent_at
+
+= link_to 'Edit', edit_message_path(@message)
+\|
+= link_to 'Back', messages_path

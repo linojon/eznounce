@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Message:
+  = @delivery.message
+%p
+  %b Address type:
+  = @delivery.address_type
+
+= link_to 'Edit', edit_delivery_path(@delivery)
+\|
+= link_to 'Back', deliveries_path

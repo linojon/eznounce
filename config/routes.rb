@@ -1,5 +1,15 @@
 Eznounce::Application.routes.draw do
 
+  resources :deliveries
+
+  resources :messages
+
+  resources :memberships
+
+  resources :groups
+
+  resources :people
+
   root to: 'pages#home'
 
   get 'pages/:action' => 'pages#:action'
