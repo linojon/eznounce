@@ -4,6 +4,7 @@ capybara
 
 models
 	person
+		address
 	group
 	membership (person-group)
 	account
@@ -12,6 +13,7 @@ models
 
 associations
 	person
+		has many addresses
 		has many memberships
 		has many messages
 
@@ -21,3 +23,20 @@ api
 	GET /message/:id
 		=> { }
 
+
+
+Approach
+- normal rails 4 app
+	- multipage layout, no styling
+	- basic models, controllers, json api
+	- stub send messages
+	- send email functionality
+
+- add angular
+	lists
+	bootstrap
+		
+- single page app
+
+
+- phonegap app
