@@ -10,9 +10,11 @@ gem 'bcrypt-ruby', '~> 3.0.0' # Use ActiveModel has_secure_password
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0' # compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.0.0'
+gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'turbolinks' # makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+
 gem 'jquery-rails'
 gem 'haml-rails'
-gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 
 gem 'unicorn'
 
