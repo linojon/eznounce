@@ -6,6 +6,8 @@ class Person < ActiveRecord::Base
   has_many :groups, through: :memberships
   has_many :messages
 
+  ADDRESS_TYPES = %w(email sms voice)
+
 
   def email_is_valid
     # if email.blank?

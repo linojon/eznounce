@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20131016182936) do
 
   create_table "deliveries", force: true do |t|
     t.integer  "message_id"
+    t.integer  "person_id"
     t.string   "address_type"
     t.datetime "created_at"
     t.datetime "updated_at"
