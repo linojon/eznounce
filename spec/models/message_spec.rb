@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Message do
-  it { should belong_to(:person) }
+  it { should belong_to(:sender).class_name('Person') }
   it { should belong_to(:group) }
 
   it "sent?" do

@@ -4,7 +4,7 @@ class Person < ActiveRecord::Base
 
   has_many :memberships
   has_many :groups, through: :memberships
-  has_many :messages
+  has_many :messages, inverse_of: :sender
 
   ADDRESS_TYPES = %w(email sms voice)
 
