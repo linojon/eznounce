@@ -7,7 +7,7 @@ class PeopleController < ApplicationController
     @people = Person.all
     respond_to do |format|
       format.html
-      format.json { render json: @people, root: false }
+      format.json { render json: @people }
     end
   end
 
@@ -16,7 +16,7 @@ class PeopleController < ApplicationController
   def show
     respond_to do |format|
       format.html
-      format.json { render json: @person, root: false }
+      format.json { render json: @person }
     end
   end
 
@@ -37,7 +37,7 @@ class PeopleController < ApplicationController
     respond_to do |format|
       if @person.save
         format.html { redirect_to @person, notice: 'Person was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @person }
+        format.json { render json: @person, status: :created, location: @person }
       else
         format.html { render action: 'new' }
         format.json { render json: @person.errors, status: :unprocessable_entity }
